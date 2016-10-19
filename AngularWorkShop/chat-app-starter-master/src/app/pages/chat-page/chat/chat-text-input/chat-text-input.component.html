@@ -1,0 +1,8 @@
+<div class="chat-input-container">
+  <div [textContent]="messageInput"
+        (input)="messageInput=$event.target.textContent"
+        (keypress)="onKey($event)"
+        contenteditable="true"
+        class="chat-input-container__input">
+  </div>
+</div>
